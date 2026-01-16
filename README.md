@@ -1,11 +1,77 @@
-# Sample Snack app
+# Minhas Reservas - App React Native
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Aplicativo mobile desenvolvido em React Native para gerenciamento de reservas. O app permite aos usuários visualizar, gerenciar e cancelar suas reservas de forma intuitiva.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Funcionalidades
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+- Listagem de reservas do usuário
+- Visualização detalhada de cada reserva (local, data, horário, status)
+- Cancelamento de reservas com confirmação
+- Pull-to-refresh para atualização da lista
+- Indicadores de status coloridos (confirmada, pendente, cancelada)
+- Estados de loading e lista vazia
+- Interface responsiva e moderna
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Tecnologias Utilizadas
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+- React Native
+- React Navigation
+- React Native Safe Area Context
+- JavaScript (ES6+)
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (versão 16 ou superior)
+- [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
+- [React Native CLI](https://reactnative.dev/docs/environment-setup)
+- Para iOS: Xcode (apenas macOS)
+- Para Android: Android Studio e JDK 11+
+
+## Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/minhas-reservas-app.git
+cd minhas-reservas-app
+```
+
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. Para iOS, instale os pods:
+```bash
+cd ios && pod install && cd ..
+```
+## Estrutura do Projeto
+
+```
+├── screens/
+│   └── MinhasReservasScreen.js    
+├── scripts/
+│   ├── fix-uimanager-error.sh    
+│   └── quick-fix.sh              
+├── metro.config.js                 
+├── package.json                   
+└── README.md                       
+```
+
+## Scripts Disponíveis
+
+| Comando | Descrição |
+|---------|-----------|
+| `npm start` | Inicia o Metro Bundler |
+| `npm run android` | Executa no Android |
+| `npm run ios` | Executa no iOS |
+| `npm run lint` | Executa o linter |
+| `npm test` | Executa os testes |
+
+
+## Autor
+
+Desenvolvido com React Native
